@@ -1,0 +1,42 @@
+﻿@page "{guid}"
+@model StudyIOC.Pages.ClientChartModel
+@{
+}
+
+<html>
+    <head>
+         
+        <script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+            <button type="button" id="call">Başlat</button>
+    <button type="button" id="halt">Durdur </button>
+        <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+
+    <div id="chart_container" style="position: relative; height:50vh; width:90vw">
+        <canvas id="line_chart" style="position: relative; height:100vh; width:100vw"></canvas>
+    </div>
+
+        <h1>Dostların arasındayım</h1>
+<h1 id="baslik" hidden>@RouteData.Values["guid"]</h1>
+
+      
+    </body>
+   
+    <script>
+
+        </script>
+    <script src="~/js/ChartClient.js"></script>
+</html>
+
+
+
+

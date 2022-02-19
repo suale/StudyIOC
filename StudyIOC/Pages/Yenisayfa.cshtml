@@ -1,0 +1,27 @@
+﻿@page
+@model StudyIOC.Pages.YenisayfaModel
+@{
+}
+
+
+    <div class="container" style="margin-top:3%">
+    <table id="mytable" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Client No</th>
+                <th>GUID</th>
+                <th>Publish Time</th>
+            </tr>
+        </thead>
+        <tbody id="SetClientList">
+            <tr id="LoadingStatus" style="color:red"></tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/ListClient.js"></script>
+
+
+
