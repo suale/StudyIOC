@@ -19,26 +19,29 @@ $(document).ready(function () {
         //var li = document.createElement("li");
         //document.getElementById("messagesList").appendChild(li);
         //i++;
-        
-       // console.log(gidecek.timestamp);
+        console.log('ads');
+        console.log(gidecek.timestamp);
+        console.log(giedecek.Data);
+        console.log(giedecek.DataNumber);
+        console.log(giedecek.ClientGUID);
 
         /*li.textContent = `${deneme}`;*/
     });
     var i = 0;
     var intervalId = setInterval(function () {
-        
+
 
         connection.invoke("SendMessage", guid).catch(function (err) {
-            console.log(gidecek);
+
             return console.error(err.toString());
         });
 
-        
 
 
-    }, 3000);
 
- 
+    }, 1000);
+
+
 
 
     console.log('başladı');

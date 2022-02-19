@@ -19,9 +19,9 @@ namespace StudyIOC.Hubs
                 }
 
             }
-            //RabbitMessage gidecek = chartMessage[chartMessage.Count - 1];
+            RabbitMessage gidecek = chartMessage[chartMessage.Count - 1];
 
-            string gidecek = "bu bir grup deneme mesajıdır "+ guid+ " "+ saat;
+            string deneme = "bu bir grup deneme mesajıdır "+ guid+ " "+ saat;
             
             await Clients.Client(Context.ConnectionId).SendAsync("ReceiveMessage",gidecek);
 
